@@ -17,8 +17,8 @@ public class Ejercicio {
 		// logger.debug("Creando guerreros e insertandolos en la BBDD.");
 		EntityManager em = JpaUtil.getEntityManager();
 		//Descomentar y cambiar <property name="hibernate.hbm2ddl.auto" value="update"/> a <property name="hibernate.hbm2ddl.auto" value="create"/> en persistence.xml para crear guerreros automáticamente.
-//		Guerrero g1 = new Guerrero("Guerrrero 1", "terrícola", 15, 10, 100);
-//		Guerrero g2 = new Guerrero("Guerrrero 2", "alienígena", 10, 15, 100);
+//		Guerrero g1 = new Guerrero("Guerrero 1", "terrícola", 15, 10, 100);
+//		Guerrero g2 = new Guerrero("Guerrero 2", "alienígena", 10, 15, 100);
 //		em.getTransaction().begin();
 //		em.persist(g1);
 //		em.persist(g2);

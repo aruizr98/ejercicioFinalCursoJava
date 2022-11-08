@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 import curso.java.ejerciciofinal.Ejercicio;
 import curso.java.ejerciciofinal.entity.interfaces.Luchable;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,10 +18,15 @@ public class Guerrero implements Luchable {
 	@Id
 	@GeneratedValue(strategy= GenerationType.IDENTITY)
 	private int id;
+	@Column(length=10, unique=true)
 	private String nombre;
+	@Column(length=10, unique=true)
 	private String tipo;
+	@Column(length=100)
 	private int puntos_ataque;
+	@Column(length=100)
 	private int puntos_defensa;
+	@Column(length=100)
 	private int puntos_vida;
 	
 	private static final Logger logger = LogManager.getLogger(Ejercicio.class);
